@@ -1,0 +1,92 @@
+/* RegisterForm.module.css */
+
+.field {
+    position: relative;
+    margin-bottom: 2rem; 
+  }
+  
+  .field input,
+  .field select,
+  .field input[type="file"] {
+    width: 100%;
+    color: #565656;
+    background: none;
+    padding: 0.625rem;
+    border: 2px solid #030104;
+    outline: none;
+    transition: border-color 250ms, background-color 250ms;
+  }
+  
+  .field input[type="file"] {
+    border: none;
+  }
+  
+  .field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0.625rem, 0.625rem);
+    color: #030104;
+    background-color: #efe4f7;
+    padding-inline: 0.25rem;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: transform 250ms, border-color 250ms, background-color 250ms;
+  }
+  
+  .field input:focus,
+  .field input:not(:placeholder-shown),
+  .field select:focus,
+  .field select:not(:placeholder-shown) {
+    background-color: #ffffff;
+    border-color: #030104;
+  }
+  
+  .field input:focus + label,
+  .field input:not(:placeholder-shown) + label,
+  .field select:focus + label,
+  .field select:not(:placeholder-shown) + label {
+    transform: translate(0.625rem, -1rem);
+    border-color: #030104;
+  }
+  
+  .field input:placeholder-shown + label,
+  .field select:placeholder-shown + label {
+    cursor: text;
+  }
+  
+  .field input:focus::placeholder,
+  .field select:focus::placeholder {
+    color: transparent;
+  }
+  
+  /* Additional styles for file input label alignment */
+  .field input[type="file"] + label {
+    transform: translateY(0.3rem);
+  }
+
+/* Style for file input to look like a button */
+.custom-file-label {
+  display: block;
+  width: 100%;
+  padding: 0.625rem;
+  background-color: #f8f9fa;
+  border: 2px solid #ced4da;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 250ms, border-color 250ms;
+}
+
+.custom-file-label:hover {
+  background-color: #e2e6ea;
+}
+
+/* Additional styles to hide the native file input and use label as button */
+.custom-file-input {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+  

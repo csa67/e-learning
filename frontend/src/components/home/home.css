@@ -1,0 +1,77 @@
+.home-page {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+    text-decoration: none;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+.card{
+  z-index: 1;
+}
+
+.testimonial-img-container {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.testimonial-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial-item {
+  text-align: center;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-item p {
+  flex: 1;
+  height: 100px;
+  overflow: hidden;
+}
+.testimonial-item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.testimonial-item h5:hover {
+  font-weight: 700;
+}
+
+.featured-courses {
+  background-image: url(../assets/background_image11.jpg);
+}
+.featured-courses .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.featured-courses .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.featured-courses .course-img-container {
+  height: 150px;
+  overflow: hidden;
+}
+.featured-courses img.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.featured-courses .card-body {
+  flex-grow: 1;
+}/*# sourceMappingURL=landing.css.map */

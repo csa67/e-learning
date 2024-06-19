@@ -1,0 +1,16 @@
+/* Custom hover effect for navigation links */
+.custom-nav-link:hover {
+    color: #ffffff; /* White text */
+    background-color: #1a5a96; /* Slightly lighter blue background */
+    border-radius: 0.25rem; /* Optional: adds rounded corners */
+  }
+  
+  /* Align the dropdown to the right */
+.dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+
+
+
+  

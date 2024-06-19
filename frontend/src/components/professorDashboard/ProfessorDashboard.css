@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaeef3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Global Styles */
+a {
+    color: #1a85ff;
+    /* Bright blue */
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #1565c0;
+    /* Darker blue */
+    text-decoration: none;
+}
+
+/* Navbar Customization */
+.navbar {
+    background: linear-gradient(45deg, #5c6bc0, #1a237e);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #d1c4e9 !important;
+    /* Light purple */
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #b39ddb !important;
+    /* Darker purple */
+}
+
+/* Breadcrumbs Customization */
+.breadcrumb {
+    background: #eaeef3;
+    /* Light background for breadcrumbs */
+    border-radius: 0.25rem;
+}
+
+.breadcrumb a {
+    color: #3949ab;
+    /* Matching dark blue */
+}
+
+.breadcrumb a:hover {
+    color: #303f9f;
+    /* Even darker blue on hover */
+}
+
+/* Course Details Styling */
+.course-details {
+    background: linear-gradient(to right, #005cbf, #003366);
+    /* Darker blue gradient */
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Number of Students Registered Styling */
+#studentCount {
+    color: #ffcc80;
+    /* Light orange color for the number */
+    font-weight: bold;
+}
+
+.course-details h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+    color: #ffcc80;
+    /* Light orange */
+    transition: color 0.3s ease-in-out;
+    align-items:baseline;
+}
+
+.course-details h2:hover {
+    color: #ffb74d;
+    /* Darker orange on hover */
+}
+
+.course-details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.course-details p:last-child {
+    margin-top: 20px;
+}
+
+#studentCount {
+    font-weight: bold;
+    color: #ff4081;
+    /* Pink */
+}
+
+/* Hover Effect on Student Count */
+#studentCount:hover {
+    color: #d50000;
+    /* Darker red on hover */
+}
+
+/* Video Cards Styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    background: linear-gradient(60deg, #8e24aa, #7e57c2);
+    color: #fff;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: #43a047;
+    /* Green color */
+    border-color: #43a047;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;
+    /* Darker green on hover */
+    border-color: #388e3c;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 12px;
+}
+
+/* Footer Style */
+/* [Reuse footer styles from your existing CSS] */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+}
+
+/* Professor Details Styling */
+.professor-details {
+    background: linear-gradient(to right, #8e24aa, #8e24aa);
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    text-align:left;
+    transition: background 0.3s ease-in-out;
+}
+
+.professor-details:hover {
+    background: linear-gradient(to right, #481058, #481058);
+}
+
+.professor-details h1 {
+    font-size: 20px;
+    color: #ffcc80;
+    /* Light orange */
+    transition: color 0.3s ease-in-out;
+}
+
+.professor-details h1:hover {
+    color: #ffb74d;
+    /* Darker orange on hover */
+}
+
+.professor-details h5 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #bbdefb;
+    /* Light blue */
+    transition: color 0.3s ease-in-out;
+}
+
+.professor-details h5:hover {
+    color: #64b5f6;
+    /* Darker blue on hover */
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .content {
+    flex: 1 0 auto; /* This ensures that the content section expands */
+  }
+  
+  footer {
+    flex-shrink: 0; /* This ensures that the footer does not shrink */
+  }
+  

@@ -1,0 +1,17 @@
+/* Layout.css */
+.main-content {
+  margin-top: 70px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .main-content.expanded {
+    margin-left: 225px; /* Adjust to match the expanded sidebar width */
+}
+@media screen and (max-width: 768px) {
+  .main-content.expanded {
+    margin-left: 30px; 
+  }
+}
+
+
+  

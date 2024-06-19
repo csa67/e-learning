@@ -1,0 +1,77 @@
+.manage-course-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.course-content-wrap {
+  flex: 1; /* will make sure to take all available space */
+  background-image: url('../assets/explore.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.course-details {
+  margin-bottom: 1rem;
+}
+
+.video-preview {
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 0.5rem 1rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .manage-course-container {
+    max-width: calc(100% - 2rem);
+  }
+  .embed-responsive-16by9::before {
+    padding-top: 75%; /* Increase padding for a taller aspect ratio on smaller screens */
+  }
+}
